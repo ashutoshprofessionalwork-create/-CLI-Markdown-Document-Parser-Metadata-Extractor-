@@ -1,0 +1,1 @@
+pip install typer python-frontmatter pydantic rich
