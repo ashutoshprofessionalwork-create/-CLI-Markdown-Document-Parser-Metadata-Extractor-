@@ -1,0 +1,10 @@
+from pydantic import BaseModel
+
+#blueprint
+class DocumentSchema(BaseModel):
+  title:str
+  author:str
+  word_count:int
+
+doc=DocumentSchema(title="my notes",author="ash",word_count=150)
+print(doc)

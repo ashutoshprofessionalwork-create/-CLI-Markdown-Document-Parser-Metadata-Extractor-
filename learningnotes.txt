@@ -1,0 +1,4 @@
+pydantic library --> validation errror --> it caught bad input before it could touch database
+
+re-> regular expression used to find patterns  --> metadata file bw tehse " --- " 
+we use re to find data bw ---
