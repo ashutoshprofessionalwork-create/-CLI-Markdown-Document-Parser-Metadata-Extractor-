@@ -32,3 +32,4 @@ if __name__=="__main__":
     print("DB HEALTH OK")
   else:
     print("DB HELTH NOtOK")
+    #db
