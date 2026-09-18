@@ -5,3 +5,22 @@ we use re to find data bw ---
 
 in db.py--> doc_id INT REFERENCES documents(id) ON DELETE CASCADE, means doc_id= x if document x exist and if document DELETE from document table than it also cleans up from here as well
 
+import time--> time.perf_counter() --> used as timer to calculate time delay in ms
+frontmatter_raw,body=match.groups() --> Regex is a special pattern used to find, match, or extract specific text from a larger piece of text.
+
+ pattern = r"^---\s*\n(.*?)\n---\s*\n(.*)$"
+ .groups() -> (.*?) -> grp 1
+           -> (.*)$ -> grp 2
+                  
+yaml.safe_load(...) -> the parser turns raw YAML strings into native Python types (maps key : value) into a dictionary , - tag into a list,num into int
+
+Frontmatter is the metadata block placed at the very beginning of a Markdown file, sandwiched between triple dashes (---).
+
+Inside --- (Frontmatter): Machine-readable configuration written in YAML. The parser uses this to extract structured properties like title, author, and tags without displaying them as regular text.
+
+Below --- (Body): The actual Markdown content meant for humans to read, which gets counted for word_count and split during chunking.
+
+---
+frontmatter
+---
+body

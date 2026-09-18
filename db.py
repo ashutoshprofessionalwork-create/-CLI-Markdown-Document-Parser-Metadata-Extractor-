@@ -75,7 +75,7 @@ def seed_data(db_path:Path=DB_PATH):
             """,(doc_id,tag))
     conn.commit()
     conn.close()
-    print("DB SEEDED with mock data -> succus")
+    print("DB SEEDED with mock data -> success")
 
 
 if __name__ == "__main__":
@@ -83,7 +83,9 @@ if __name__ == "__main__":
     # if health_check():
     #     print("DB HEALTH OK")
     # else:
-    #     print("DB HELTH NOtOK")
+    #     print("DB HEaLTH NOtOK")
     #     # db
+
+
 
 

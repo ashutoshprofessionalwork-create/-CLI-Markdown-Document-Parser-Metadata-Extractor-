@@ -1,10 +1,5 @@
-from pydantic import BaseModel
+import time
 
-#blueprint
-class DocumentSchema(BaseModel):
-  title:str
-  author:str
-  word_count:int
-
-doc=DocumentSchema(title="my notes",author="ash",word_count=150)
-print(doc)
+start = time.perf_counter()
+# ... do work ...
+duration_ms = (time.perf_counter() - start) * 1000
