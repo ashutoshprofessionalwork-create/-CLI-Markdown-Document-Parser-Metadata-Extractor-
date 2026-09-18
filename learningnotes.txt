@@ -2,3 +2,6 @@ pydantic library --> validation errror --> it caught bad input before it could t
 
 re-> regular expression used to find patterns  --> metadata file bw tehse " --- " 
 we use re to find data bw ---
+
+in db.py--> doc_id INT REFERENCES documents(id) ON DELETE CASCADE, means doc_id= x if document x exist and if document DELETE from document table than it also cleans up from here as well
+

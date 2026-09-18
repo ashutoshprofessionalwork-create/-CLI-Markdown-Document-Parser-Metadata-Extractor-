@@ -29,7 +29,7 @@ class MarkdownaParser:
         words = body.split()
         word_count = len(words)
 
-        # Build and validate with our Pydantic model
+        # validate with pydantic model
         return DocumentSchema(
             title=data.get("title", self.path.stem),
             author=data.get("author", "Unknown"),
@@ -37,3 +37,4 @@ class MarkdownaParser:
             created_at=data.get("created_at", datetime.now()),
             tags=data.get("tags", []),
         )
+

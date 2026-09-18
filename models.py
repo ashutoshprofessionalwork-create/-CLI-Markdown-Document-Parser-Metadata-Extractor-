@@ -13,3 +13,4 @@ class DocumentSchema(BaseModel):
     word_count: int
     created_at: datetime
     tags: list[str] = []
+    
